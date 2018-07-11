@@ -1,0 +1,23 @@
+{
+  "name": "dat-workshop-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beakerbrowser/dat-workshop-server.git"
+  },
+  "author": "Paul Frazee <pfrazee@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beakerbrowser/dat-workshop-server/issues"
+  },
+  "homepage": "https://github.com/beakerbrowser/dat-workshop-server#readme",
+  "dependencies": {
+    "@beaker/dat-node": "github:beakerbrowser/dat-node",
+    "express": "^4.16.3"
+  }
+}
