@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node ./bin.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,9 @@
   "homepage": "https://github.com/beakerbrowser/dat-workshop-server#readme",
   "dependencies": {
     "@beaker/dat-node": "github:beakerbrowser/dat-node",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "mkdirp": "^0.5.1",
+    "parse-dat-url": "^3.0.1",
+    "toiletdb": "^1.4.1"
   }
 }

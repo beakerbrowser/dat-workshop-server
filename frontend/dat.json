@@ -1,0 +1,6 @@
+{
+  "title": "Dat Workshop",
+  "experimental": {
+    "apis": ["capturePage"]
+  }
+}
