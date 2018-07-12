@@ -95,9 +95,6 @@ exports.setup = async function setup (dataPath) {
   })
 
   // static assets
-  app.use('/', express.static(join(__dirname, '..', 'frontend', 'html')))
-  app.use('/css', express.static(join(__dirname, '..', 'frontend', 'css')))
-  app.use('/js', express.static(join(__dirname, '..', 'frontend', 'js')))
   app.use('/thumbs', express.static(thumbsPath))
 
   // listen
