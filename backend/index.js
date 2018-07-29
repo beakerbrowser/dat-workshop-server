@@ -22,9 +22,10 @@ exports.setup = async function setup (dataPath) {
   await db.open()
 
   const WORKSHOP_HOST = process.env.WORKSHOP_HOST || 'localhost:3000'
+  const USE_HTTPS = (process.env.USE_HTTPS == 1)
 
   var server = {
-    url: 'http://' + WORKSHOP_HOST,
+    url: (USE_HTTPS ? 'https://' : 'http://') + WORKSHOP_HOST,
     dat,
     db,
     activeDats: null
