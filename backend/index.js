@@ -21,8 +21,10 @@ exports.setup = async function setup (dataPath) {
   db.write = promisify(db.write.bind(db))
   await db.open()
 
+  const WORKSHOP_HOST = process.env.WORKSHOP_HOST || 'localhost:3000'
+
   var server = {
-    url: 'http://localhost:3000',
+    url: 'http://' + WORKSHOP_HOST,
     dat,
     db,
     activeDats: null
@@ -50,7 +52,7 @@ exports.setup = async function setup (dataPath) {
   })
 
   // GET frontend
-  app.get('/', (req, res) => res.send(`Use the <a href="${frontendArchive.url}">dat frontend</a>`))
+  app.get('/', (req, res) => res.send(`Use the <a href="dat://${WORKSHOP_HOST}">dat frontend</a>`))
   app.get('/.well-known/dat', (req, res) => res.send(frontendArchive.url))
 
   // GET /dats

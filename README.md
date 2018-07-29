@@ -8,5 +8,5 @@ A server for the "dat workshop" application (created for the Decentralized Web S
 git clone https://github.com/beakerbrowser/dat-workshop-server.git
 cd dat-workshop-server
 npm i
-npm start
+WORKSHOP_HOST=workshop.beakerbrowser.com npm start
 ```
