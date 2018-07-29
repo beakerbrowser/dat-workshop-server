@@ -1,1 +1,62 @@
-/* TODO */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#heading {
+  background: #E91E63;
+  padding: 4em 2em 4em;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+#heading h1 {
+  margin: 0 0 0.4em;
+}
+
+#heading button {
+    background: #fff;
+  border: 0;
+  color: #ce4473;
+  font-size: 1.2em;
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+#listing {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 10px;
+  grid-gap: 10px 0;
+}
+
+@media(max-width: 1250px) {
+  #listing {
+    grid-template-columns: 1fr 1fr 1fr;    
+  }
+}
+
+.dat {
+  width: 300px;
+  border: 5px solid #555;
+  color: inherit;
+  text-decoration: none;
+}
+
+.dat:hover .dat-title {
+  text-decoration: underline;
+}
+
+.dat img {
+  border-bottom: 1px solid gray;
+}
+
+.dat-title {
+  font-weight: bold;
+}
+
+.dat-title,
+.dat-description {
+  margin: 5px 10px;
+}

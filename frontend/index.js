@@ -67,11 +67,11 @@ function renderListing (listing) {
   for (var key in listing) {
     let dat = listing[key]
     container.append(render(`
-      <div class="dat">
+      <a class="dat" href="${safe(dat.url)}" title="${safe(dat.title)}" target="_blank">
         <img src="${backendUrl}/thumbs/${safe(key)}.png" />
-        <div class="dat-title"><a href="${safe(dat.url)}" title="${safe(dat.title)}">${safe(dat.title)}</a></div>
+        <div class="dat-title">${safe(dat.title)}</div>
         <div class="dat-description">${safe(dat.description)}</div>
-      </div>
+      </a>
     `))
   }
 }
