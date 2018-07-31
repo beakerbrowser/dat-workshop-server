@@ -53,7 +53,7 @@ exports.setup = async function setup (dataPath) {
   })
 
   // GET frontend
-  app.get('/', (req, res) => res.send(`Use the <a href="dat://${WORKSHOP_HOST}">dat frontend</a>`))
+  app.get('/', (req, res) => res.send(`Go to <a href="dat://${WORKSHOP_HOST}">dat://workshop.beakerbrowser.com</a>`))
   app.get('/.well-known/dat', (req, res) => res.send(frontendArchive.url))
 
   // GET /dats
