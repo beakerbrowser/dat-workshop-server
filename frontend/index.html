@@ -1,16 +1,54 @@
 <!doctype html>
 <html>
   <head>
-    <title>Dat Workshop</title>
+    <title>Beaker Browser workshop</title>
     <link rel="stylesheet" href="/index.css">
   </head>
 
   <body>
-    <div id="heading">
-      <h1>Dat &amp; Beaker Workshop</h1>
-      <button id="add-btn">+ Add your dat</button>
-    </div>
-    <div id="listing"></div>
+    <style>body { --theme-color: #5543ff; }</style>
+
+    <header>
+      <div class="container">
+        <h1>
+          Beaker Browser workshop
+        </h1>
+
+        <nav>
+          <a href="/">
+            Home
+          </a>
+
+          <a href="/agenda">
+            Agenda
+          </a>
+
+          <a href="/challenges">
+            Challenges
+          </a>
+
+          <a href="/resources">
+            Resources
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <form id="add-dat">
+          <label for="url">Submit a website</label>
+          <div class="input-group">
+            <input placeholder="dat://123456..." name="url" type="text" />
+            <button id="submit-btn" disabled="disabled" class="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="container wide">
+        <div id="website-grid"></div>
+      </div>
+    </main>
   </body>
 
   <script type="module" src="/index.js"></script>

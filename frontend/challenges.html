@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Challenges - Beaker Browser workshop</title>
+    <link rel="stylesheet" href="/index.css">
+  </head>
+
+  <body>
+    <style>body { --theme-color: #5543ff; }</style>
+
+    <header>
+      <div class="container">
+        <h1>
+          Challenges
+        </h1>
+
+        <nav>
+          <a href="/">
+            Home
+          </a>
+
+          <a href="/agenda">
+            Agenda
+          </a>
+
+          <a href="/challenges">
+            Challenges
+          </a>
+
+          <a href="/resources">
+            Resources
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h2>Not-so-hard</h2>
+        <ul>
+          <li>
+            Open <a href="beaker://library/dat://beakerbrowser.com">beaker://library/dat://beakerbrowser.com</a> and inspect the source
+          </li>
+
+          <li>
+            <a href="dat://beakerbrowser.com/docs/guides/publish-a-peer-to-peer-website">Create a peer-to-peer website</a> that says "Hello, world!"
+          </li>
+
+          <li>
+            Create a website with a title and description. (See <a href="dat://beakerbrowser.com/docs/apis/manifest"><code>dat.json</code></a>)
+          </li>
+
+          <li>
+            Find a website you like and <a href="dat://beakerbrowser.com/docs/tour/#core-concept-peers-and-seeding">seed it</a>
+          </li>
+
+          <li>
+            <a href="dat://beakerbrowser.com/docs/guides/create-a-markdown-site">Create a markdown website</a>
+          </li>
+
+          <li>
+            Create a website and set a <a href="dat://beakerbrowser.com/docs/guides/use-a-custom-404-page">custom 404 page</a>
+          </li>
+        </ul>
+
+      <h2>Harder</h2>
+        <ul>
+          <li>
+            Use HTML and CSS to make your homepage, Geocities style!
+          </li>
+
+          <li>
+            Make an editable copy of <a href="dat://fritter.hashbase.io">dat://fritter.hashbase.io</a> and customize the layout
+          </li>
+
+          <li>
+            Do you have a static website? Port your website to `dat://` and <a href="dat://beakerbrowser.com/docs/guides/use-a-domain-name-with-dat">publish it under your dat://${yourdomain}.com</a>
+          </li>
+
+          <li>
+            Use <a href="dat://beakerbrowser.com/docs/apis/dat#datarchive-selectarchive"><code>DatArchive.selectArchive()</code></a> to open Beaker's archive picker
+          </li>
+
+          <li>
+            Use Beaker's <a href="dat://beakerbrowser.com/docs/apis/dat#writeFile"><code>DatArchive</code></a> API to write an <code>hello.txt</code> file that says "Hello, world!"
+          </li>
+        </ul>
+
+      <h2>Hardest</h2>
+        <ul>
+          <li>
+            Read <a href="dat://beakerbrowser.com/img/logo/logo-blue.png">Beaker's logo using the <a href="dat://beakerbrowser.com/docs/apis/dat#readFile"><code>DatArchive</code> API</a>, then render it into a page
+          </li>
+
+          <li>
+            Make a simple photo-sharing application (See  <a href="dat://p2p-photos-taravancil.hashbase.io/">this example</a> for inspiration)
+          </li>
+
+          <li>
+            Take a screenshot of a dat:// website using the experimental <a href="dat://beakerbrowser.com/docs/apis/experimental-capturepage"><code>capturePage</code> API</a>
+          </li>
+
+          <li>
+            Make a self-editing site that saves changes by <a href="dat://beakerbrowser.com/docs/guides/write-site-files">writing to itself</a>
+          </li>
+
+          <li>
+            Dynamically generate content using <a href="dat://beakerbrowser.com/docs/guides/use-a-custom-404-page">a custom 404 page</a>.
+            <ul>
+              <li>
+                Tara says this a weird way to make a website, Paul insists it's not. Talk to him if you're interested or see <a href="dat://json-pages-demo.hashbase.io/">his example</a> :-)
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </main>
+  </body>
+
+  <script type="module" src="/index.js"></script>
+</html>

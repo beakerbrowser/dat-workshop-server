@@ -150,4 +150,10 @@ async function writeFrontend (server, archive) {
   copy('index.html')
   copy('index.css')
   copy('index.js')
+  copy('agenda.html')
+  copy('resources.html')
+  copy('Inter-UI-Regular.woff')
+  copy('Inter-UI-Medium.woff')
+  copy('Inter-UI-Bold.woff')
+  copy('challenges.html')
 }

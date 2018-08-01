@@ -21,6 +21,7 @@
     "@beaker/dat-node": "github:beakerbrowser/dat-node",
     "express": "^4.16.3",
     "mkdirp": "^0.5.1",
+    "npm": "^6.2.0",
     "parse-dat-url": "^3.0.1",
     "toiletdb": "^1.4.1"
   }
